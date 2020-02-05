@@ -48,5 +48,13 @@ print('-' * 25)
 d1 = Distance(6)
 d2 = Distance(3)
 print(calc.add(d1, d2))
-# print(calc.subtract(d1, d2))
+
+
+# Can Monkey patch Distance to work with subtraction
+def subtract(self, other):
+    return Distance(self.value - other.value)
+
+
+Distance.__sub__ = subtract
+print(calc.subtract(d1, d2))
 # print(calc.divide(d1, d2))
