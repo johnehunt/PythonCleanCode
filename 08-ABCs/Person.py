@@ -1,8 +1,8 @@
-from abc import ABCMeta
+from abc import ABC
 
 # Virtual Subclasses
 
-class Person(metaclass=ABCMeta):
+class Person(ABC):
     def __init__(self, name, age):
         self.name = name
         self.age = age
