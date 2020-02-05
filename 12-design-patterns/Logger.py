@@ -1,5 +1,6 @@
 """ Implements the Decorator Design Pattern"""
 
+
 class Logger(object):
     """ Logger class implementing the descriptor protocol"""
     def __init__(self, name):
