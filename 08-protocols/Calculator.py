@@ -24,9 +24,6 @@ class Distance:
     def __add__(self, other):
         return Distance(self.value + other.value)
 
-    def __sub__(self, other):
-        return Distance(self.value - other.value)
-
     def __str__(self):
         return 'Distance[' + str(self.value) + ']'
 
@@ -51,5 +48,5 @@ print('-' * 25)
 d1 = Distance(6)
 d2 = Distance(3)
 print(calc.add(d1, d2))
-print(calc.subtract(d1, d2))
+# print(calc.subtract(d1, d2))
 # print(calc.divide(d1, d2))
