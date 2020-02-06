@@ -29,8 +29,8 @@ def calculate(n):
 
 def main():
     print('In main')
-    cProfile.run('calculate(5)')
-    cProfile.run('calculate(5)', 'profile_results.profile')
+    cProfile.run('calculate(05-builtin-higher-order)')
+    cProfile.run('calculate(05-builtin-higher-order)', 'profile_results.profile')
     print('Done')
 
 
