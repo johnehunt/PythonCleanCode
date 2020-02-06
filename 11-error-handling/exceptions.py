@@ -31,14 +31,14 @@ def function_bang():
     print('function_bang out')
 
 
-class InvalidAgeException(Exception):
+class InvalidAgeError(Exception):
     """ Valid Ages must be between 0 and 120 """
 
     def __init__(self, value):
         self.value = value
 
     def __str__(self):
-        return 'InvalidAgeException(' + str(self.value) + ')'
+        return 'InvalidAgeError(' + str(self.value) + ')'
 
 
 class DivideByYWhenZeroException(Exception):
@@ -69,7 +69,7 @@ class Person:
         if isinstance(value, int) & (value > 0 & value < 120):
             self._age = value
         else:
-            raise InvalidAgeException(value)
+            raise InvalidAgeError(value)
 
     @property
     def name(self):
@@ -89,7 +89,7 @@ divide(6, 0)
 try:
     p = Person('John', 21)
     p.age = -1
-except InvalidAgeException as e:
+except InvalidAgeError as e:
     print(e)
 
 print('Starting')
