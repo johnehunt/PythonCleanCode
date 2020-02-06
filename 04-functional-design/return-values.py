@@ -20,3 +20,9 @@ print(complex_function(1, None, 3))
 
 print(complex_function2(1, 2, 3))
 print(complex_function2(1, None, 3))
+
+
+def complex_function3(a, b, c):
+    if not a and not b:
+        return None
+    result = a + b + c
