@@ -49,11 +49,14 @@ def check_can_pay(cart):
 
 print('Check can pay:', check_can_pay(cart))
 
+
 def compose(func1, func2):
     def composed_function(args):
         result = func1(args)
         return func2(result)
+
     return composed_function
+
 
 check_price_and_credit = \
     compose(calculate_price, check_credit)

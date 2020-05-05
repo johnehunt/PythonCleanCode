@@ -1,7 +1,7 @@
 """ Contains an example of Monkey Patching"""
 
 
-class Bag():
+class Bag:
     """ Bag doe snot define a method get_length """
     def __init__(self):
         self.data = ['a', 'b', 'c']

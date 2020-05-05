@@ -1,5 +1,6 @@
 from abc import ABC
 
+
 # Virtual Subclasses
 
 class Person(ABC):

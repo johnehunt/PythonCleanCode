@@ -1,5 +1,6 @@
 from memprof import *
 
+
 class Person:
 
     def __init__(self, name, hours, hourly_rate):
@@ -8,12 +9,13 @@ class Person:
         self.hourly_rate = hourly_rate
 
     def __str__(self):
-        return 'Person' + (self.name) + ' worked ' + self.hours + ' @ ' + self.hourly_rate
+        return 'Person' + self.name + ' worked ' + self.hours + ' @ ' + self.hourly_rate
 
 
 def calculate_pay(person):
     x = person.hours * person.hourly_rate
     return x
+
 
 @memprof
 def get_pay():

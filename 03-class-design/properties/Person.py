@@ -12,7 +12,7 @@ class Person:
     @age.setter
     def age(self, value):
         print('In set age method')
-        if isinstance(value,int) & value > 0 & value < 120:
+        if isinstance(value, int) & value > 0 & value < 120:
             self._age = value
 
     @property
@@ -22,9 +22,10 @@ class Person:
 
     def __str__(self):
         return 'Person[' + \
-                   str(self._name) +\
-                   '] is ' + \
-                   str(self._age)
+               str(self._name) + \
+               '] is ' + \
+               str(self._age)
+
 
 person = Person('John', 54)
 print(person)

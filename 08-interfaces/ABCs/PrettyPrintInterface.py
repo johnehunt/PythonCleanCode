@@ -6,6 +6,7 @@ class PrettyPrintInterface(ABC):
     """Acts as part of a contract to be implemented
        More formal than a Protocol
        Can check type meets this contract"""
+
     @abstractmethod
     def pretty_print(self): pass
 

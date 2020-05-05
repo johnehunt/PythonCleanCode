@@ -1,5 +1,6 @@
 from time import time
 
+
 # decorator to time functions
 def timer(func):
     def func_timer(*args, **kwargs):
@@ -8,7 +9,9 @@ def timer(func):
         end = time()
         print(func.__name__, 'executed in', end - start)
         return result
+
     return func_timer
+
 
 @timer
 def sample_function():
@@ -17,5 +20,5 @@ def sample_function():
         result = result + (i * i * i)
     return result
 
-sample_function()
 
+sample_function()

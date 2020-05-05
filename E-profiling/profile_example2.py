@@ -1,6 +1,7 @@
 import cProfile
 import pstats
 
+
 def do_cprofile(func):
     """Decorator for profiling a function """
 
@@ -17,8 +18,10 @@ def do_cprofile(func):
 
     return profiled_func
 
+
 from random import randint
 from time import sleep
+
 
 def fibonacci(n):
     print('.', end='')
@@ -33,11 +36,12 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
+
 @do_cprofile
 def calculate(n):
     print('In calculate')
     for _ in range(0, n):
-        fibonacci(randint(10,30))
+        fibonacci(randint(10, 30))
         sleep(0.5)
         print()
     print('Done calculate')
@@ -52,5 +56,3 @@ def main():
 print('Running')
 main()
 print('Done profiling')
-
-

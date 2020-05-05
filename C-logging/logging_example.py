@@ -6,6 +6,7 @@ logging.basicConfig(filename='example.log', format='%(asctime)s %(message)s', da
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
+
 def main():
     logger.warning('This is a warning!')
     logger.info('This is just for information')

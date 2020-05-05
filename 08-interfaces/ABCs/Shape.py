@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Shape(ABC):
-# class Shape(ABC):
+    # class Shape(ABC):
 
     def __init__(self, id):
         self._id = id

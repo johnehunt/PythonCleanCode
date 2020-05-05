@@ -4,7 +4,7 @@ import logging
 
 # Sets a file handler ont he root logger to
 # save log messages to the example.log file
-logging.basicConfig(filename='example.log',level=logging.DEBUG)
+logging.basicConfig(filename='example.log', level=logging.DEBUG)
 
 # If no handler is explicitly set on the name logger
 # it will delegate the messages to the parent logger to handle

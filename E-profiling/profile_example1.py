@@ -4,6 +4,7 @@ import pstats
 from random import randint
 from time import sleep
 
+
 def fibonacci(n):
     print('.', end='')
     if n < 0:
@@ -21,7 +22,7 @@ def fibonacci(n):
 def calculate(n):
     print('In calculate')
     for _ in range(0, n):
-        fibonacci(randint(10,30))
+        fibonacci(randint(10, 30))
         sleep(0.5)
         print()
     print('Done calculate')
@@ -40,4 +41,3 @@ print('Done profiling')
 
 p = pstats.Stats('profile_results.profile')
 p.strip_dirs().sort_stats('time').print_stats()
-

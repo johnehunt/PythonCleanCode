@@ -1,5 +1,4 @@
 class Person:
-
     """An example class to hold a persons name and age.
     It also includes
         * a classside method
@@ -13,7 +12,6 @@ class Person:
     @classmethod
     def increment_instance_count(cls):
         cls.instance_count += 1
-
 
     @staticmethod
     def static_function():

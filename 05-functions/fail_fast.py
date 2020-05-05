@@ -36,6 +36,8 @@ except TypeError as error:
 
 
 def get_property(name):
+    if name == 'title':
+        return 'App'
     return None
 
 

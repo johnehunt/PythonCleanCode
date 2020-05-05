@@ -2,14 +2,14 @@ def runcalc(x):
     x / 0
 
 
-def print_value(i, list):
-    print(list[i])
+def print_value(i, alist):
+    print(alist[i])
 
 
-def print_alt_value(i, list):
-    if i > len(list):
+def print_alt_value(i, alist):
+    if i > len(alist):
         raise ValueError('Invalid length ' + str(i))
-    print(list[i])
+    print(alist[i])
 
 
 def my_function(x, y):
@@ -119,16 +119,16 @@ except ValueError as ve:
     print(ve)
     raise
 
-l = [1, 2, 3, 4]
+list = [1, 2, 3, 4]
 try:
-    print_alt_value(7, l)
+    print_alt_value(7, list)
 except Exception as e:
     print(e)
 
-l = [1, 2, 3, 4]
+list = [1, 2, 3, 4]
 try:
-    print_value(2, l)
-    print_value(3, l)
+    print_value(2, list)
+    print_value(3, list)
 except IndexError as e:
     print('Exception: ', e)
 else:

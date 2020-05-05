@@ -2,6 +2,7 @@ from pympler import asizeof, tracker
 
 from itertools import chain
 
+
 class Student:
 
     def __init__(self, name, age, subject):
@@ -9,10 +10,12 @@ class Student:
         self.age = age
         self.subject = subject
 
+
 class Subject:
 
     def __init__(self, title):
         self.title = title
+
 
 tr = tracker.SummaryTracker()
 
@@ -37,4 +40,3 @@ print('asizeof.asizeof([year])', asizeof.asizeof([year]))
 print(asizeof.asized([year], detail=3).format())
 
 tr.print_diff()
-
