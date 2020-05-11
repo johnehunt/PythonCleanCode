@@ -1,4 +1,5 @@
-# Smaple Queue
+# Sample Queue
+
 
 queue = []  # Create an empty queue
 queue.append('task1')
@@ -10,6 +11,7 @@ element1 = queue.pop(0)
 print('element retrieved from queue:', element1)
 print('queue after removal', queue)
 
+print('-' * 10)
 
 class Queue:
     """ Queue class with restricted, queue like interface """
