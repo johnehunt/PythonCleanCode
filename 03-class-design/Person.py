@@ -1,10 +1,10 @@
 class Person:
     """An example class to hold a persons name and age.
     It also includes
-        * a classside method
+        * a classide method
         * a static method
     Which are very different in Python.
-    A classside method is part of the class but a
+    A classide method is part of the class but a
     static method is just referenced via the classname."""
 
     instance_count = 0
