@@ -28,8 +28,9 @@ class Person:
     @age.setter
     def age(self, value):
         print('in set for age with ', value)
-        if value > 0 and value < 120:
+        if 0 < value < 120:
             self.__age = value
+
 
 person1 = Person('John', 21)
 print(person1.age)
