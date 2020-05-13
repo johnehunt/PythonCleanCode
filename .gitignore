@@ -55,3 +55,5 @@ dkms.conf
 /.idea/vcs.xml
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/PythonCleanCode.iml
+07-interfaces/protocols/__pycache__/Quantity.cpython-38.pyc
+*.pyc

@@ -30,3 +30,7 @@ employee.set_bonus_calculation(lambda h, r: h * r * 0.10)
 
 print('employee.calculate_pay():', employee.calculate_pay())
 print('employee.calculate_bonus():', employee.calculate_bonus())
+
+employee.set_bonus_calculation(lambda h, r: h * r * 0.30)
+print('employee.calculate_pay():', employee.calculate_pay())
+print('employee.calculate_bonus():', employee.calculate_bonus())
